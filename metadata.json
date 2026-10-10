@@ -1,0 +1,6 @@
+{
+  "name": "VaporInvaders Synthwave Arcade",
+  "description": "80s vaporwave Space Invaders arcade game with integrated synthwave music player and CRT scanlines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

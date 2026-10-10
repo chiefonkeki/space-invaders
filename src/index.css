@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arcade: 'Press Start 2P', monospace;
+    --font-synth: 'Orbitron', sans-serif;
+    --font-vhs: 'VT323', monospace;
+  }
+}
+
+.font-arcade {
+  font-family: 'Press Start 2P', monospace;
+}
+
+.font-synth {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.font-vhs {
+  font-family: 'VT323', monospace;
+}
+
+/* CRT Scanlines and vignette */
+.crt-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 26, 0) 50%,
+    rgba(0, 0, 0, 0.35) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+.crt-vignette {
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.85), inset 0 0 20px rgba(255, 42, 133, 0.2);
+  pointer-events: none;
+}
+
+/* Glowing text effects */
+.neon-glow-pink {
+  text-shadow: 0 0 4px #ff2a85, 0 0 12px #ff2a85, 0 0 24px rgba(255, 42, 133, 0.6);
+}
+
+.neon-glow-cyan {
+  text-shadow: 0 0 4px #05d9e8, 0 0 12px #05d9e8, 0 0 24px rgba(5, 217, 232, 0.6);
+}
+
+.neon-glow-purple {
+  text-shadow: 0 0 4px #b537f2, 0 0 12px #b537f2, 0 0 24px rgba(181, 55, 242, 0.6);
+}
+
+.neon-glow-gold {
+  text-shadow: 0 0 4px #ffe600, 0 0 12px #ffe600, 0 0 24px rgba(255, 230, 0, 0.6);
+}
+
+.neon-border-pink {
+  box-shadow: 0 0 8px #ff2a85, inset 0 0 8px rgba(255, 42, 133, 0.3);
+}
+
+.neon-border-cyan {
+  box-shadow: 0 0 8px #05d9e8, inset 0 0 8px rgba(5, 217, 232, 0.3);
+}
+
+/* Rolling scanline beam */
+@keyframes crt-roll {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+.animate-scan-roll {
+  animation: crt-roll 10s linear infinite;
+}
+
+/* Tape reel spin */
+@keyframes reel-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-reel {
+  animation: reel-spin 3s linear infinite;
+}
+
