@@ -1,6 +1,6 @@
 # VaporInvaders 👾📼
 
-A retro 1980s vaporwave **Space Invaders arcade game** with an integrated real-time **Synthwave Cassette Player** vibe-coded through **Google AI Studio** built with React, Tailwind CSS, and the Web Audio API.
+A retro 1980s vaporwave **Space Invaders arcade game** with an integrated real-time **Synthwave Cassette Player** vibe-coded through **Google AI Studio** and built with React, Tailwind CSS, and the Web Audio API.
 
 ---
 
